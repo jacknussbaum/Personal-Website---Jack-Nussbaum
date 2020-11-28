@@ -22,7 +22,7 @@ header {
     padding: 30px 10%;
 }
 
-#logo {
+.logo {
     font-size: 50px;
     cursor: pointer;
     margin-right: auto;
@@ -57,7 +57,7 @@ button {
     cursor: pointer;
     transition: all 0.3s ease 0s;
     width: 250px;
-    margin-top: 145px;
+    margin-top: 147px;
 
     
 
@@ -103,10 +103,6 @@ button:hover {
     
 }
 
-#gray-box {
-    background-color: white;
-    height: 500px
-}
 
 #jack-pic {
     margin-top: 160px;
@@ -131,6 +127,7 @@ text {
 }
 
 #intro-subtext {
+    background: transparent;
     margin-top: 25px;
     font-size: 24px;
 }
@@ -143,4 +140,28 @@ text {
 
 .contact-button {
     background: transparent;
+}
+
+.page-body {
+    background-color: white;
+}
+
+#main-body {
+    height: 1000px;
+}
+
+#about-body {
+    height: 1000px;
+}
+
+#about-header {
+    width: 100%;
+}
+
+#resume-body {
+    height: 400px;
+    background-color: #b3daff;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
 }
