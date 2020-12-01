@@ -40,7 +40,7 @@ header {
     padding: 0px 20px;
 }
 
-.navbar-links li a {
+.navbar-links li a, .contact-logo{
     transition: all 0.3s ease 0s;
 }
 
@@ -109,27 +109,51 @@ button:hover {
     width: 100%;
 }
 
-text {
+#text {
     height:100%;
+    padding-left: 50px;
     
 }
 
-#intro-heading, #intro-subtext{
-    text-align: center;
+#intro-hello, #intro-subtext{
+    
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    color: #Fdf5ec;
+    margin-top: 50px;
+    
+
 }
 
-#intro-heading {
-    margin-top: 50px;
-    font-size: 82px;
+#intro-hello {
+    color: rgb(7, 117, 104, 1);
+    font-size: 52px;
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    border-right: 2px solid rgb(7, 117, 104, 1);
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+}
+
+#intro-name {
+    color:#Fdf5ec;
+    font-size: 72px;
+    margin-top: 20px;
+    text-align: left;
+    font-weight: 900;
+
 }
 
 #intro-subtext {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
     background: transparent;
     margin-top: 25px;
-    font-size: 24px;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 0px;
+    color: #Fdf5ec;
 }
 
 #center-button {
@@ -164,4 +188,90 @@ text {
     display: flex;
     justify-content: space-between;
     text-align: right;
+}
+
+.footer {
+    width: 100%;
+    height:300px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#footer-text {
+    width: 100%;
+    color: #Fdf5ec;
+    font-size: 36px;
+    text-align: left;
+    align-items: center;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+}   
+
+.footer-image {
+    height: 300px;
+    width: 195px;
+}
+
+#footer-image-container {
+    height: 300px;
+    width: 195;
+    float: right;
+}
+
+.contact-logos-container {
+    margin-top: 100px;
+    justify-content: space-between;
+    text-align: center;
+    display: inline-block;
+}
+
+.contact-logo {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.contact-logo:hover {
+    opacity: .6;
+}
+
+#individual-logos-container {
+    float: left;
+}
+
+.contact-logo#instagram, .contact-logo#github {
+    margin-right: 150px;
+}
+
+.typewriter{
+    animation: typewriter .9s steps(20) 1s 1 normal both, 
+    blinkTextCursor 500ms steps(20) 2s normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 250px;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: #Fdf5ec;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+#testy {
+    position: relative;
+    top: 50%;
+    border-right: 2px solid white;
+    overflow: hidden;
 }
